@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-08">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="Js.js"></script>
+        <title>Tính tổng sách nhập kho</title>
+    </head>
+    <body>
+        <script>
+            let soSachCU=prompt("Nhập số sách cũ");
+            let soSachMoi=prompt("Nhập số sách mới");
+            let cu=Number(soSachCU);
+            let moi=Number(soSachMoi);
+            let tongSoSach=cu+moi;
+            if (isNaN(tongSoSach)){
+                console.log("Error");
+            } else {
+                let thongBao = `Tổng số sách hiện tại là: ${tongSoSach}`;
+                console.log(thongBao);
+                document.write("<h1>"+thongBao+"</h1>");
+            }
+        </script>
+    </body>
+</html>

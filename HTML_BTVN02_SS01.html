@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-08">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="Js.js"></script>
+        <title>Nhập số lượng sách</title>
+    </head>
+    <body>
+        <script>
+            let input = prompt("Vui lòng nhập số lượng sách trong thư viện:");
+            let soLuongSach = Number(input);
+            if (isNaN(soLuongSach)) {
+                console.log("Lỗi: Dữ liệu bạn nhập không phải là một con số.");
+            } else {
+            let ketQua = `Thư viện hiện có '${soLuongSach}' cuốn sách.`;
+    
+            console.log(ketQua);
+            document.write("<h3>" + ketQua + "</h3>");
+            }         
+        </script>
+    </body>
+</html>

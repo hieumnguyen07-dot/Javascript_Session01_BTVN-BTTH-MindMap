@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-08">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tính tuổi của sách trong thư viện</title>
+    </head>
+    <body>
+        <script>
+            let nameBook=prompt("Tên sách : ");
+            let yearPublication=Number(prompt("Năm xuất bản của sách"));
+            let currentYear=Number(prompt("Năm hiện tại: "));
+            let ageBook=currentYear-yearPublication;
+            console.log("Sách : " + nameBook);
+            console.log("Năm xuất bản : " + yearPublication);
+            console.log("Tuổi của sách : " + ageBook + "năm");
+        </script>
+    </body>
+</html>
